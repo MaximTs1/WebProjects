@@ -55,7 +55,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 4rem;
   background-color: aqua;
-  width: 75%;
+  width: 70%;
   margin: auto;
   margin-bottom: 5%;
   padding-top: 5%;
