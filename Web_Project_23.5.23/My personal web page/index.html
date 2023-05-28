@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Maxim Tsvetkov</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+      rel="stylesheet"/>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+       
+  </head>
+
+  <body>
+<section> 
+        <div class="top-container">
+            <img class="top-cloud" src="images/cloud.png" alt="cloud" />
+            <div class="title-text">
+              <h1>I'm Maxim.</h1>
+              <h2>a <span class="pro">pro</span>gramming student.</h2>
+            </div>
+            <img class="bottom-cloud" src="images/cloud.png" alt="cloud" />
+            <img class="mountain" src="images/mountain.png" alt="mountain-img" />
+          </div>
+</section>
+
+  <section class="process-bar">
+    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-success" style="width: 25%; ">html</div>
+    </div> <br>
+    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-info text-dark" style="width: 50%;">CSS</div>
+    </div><br>
+    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-warning text-dark" style="width: 75%;">SASS/SCSS</div>
+    </div><br>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-danger" style="width: 75%;">100%</div>
+    </div>
+    
+  </section>
+
+<section>  <!-- achievment bar-->
+  <div class="container">
+    <h2>Striped Progress Bars</h2>
+    <p>The .progress-bar-striped class adds stripes to the progress bars:</p> 
+    <div class="progress">
+      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+        40% Complete (success)
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+        50% Complete (info)
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+        60% Complete (warning)
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+        70% Complete (danger)
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section>  <!-- achievment bar-->
+    <div id="myChart" style="width:100%; max-width:600px; height:500px; margin: auto;"></div>
+
+    <script>
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    
+    function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Language', '1-10'],
+      ['HTML',10],
+      ['CSS',8],
+      ['JS',5],
+      ['Angular',3],
+      ['React',3]
+    ]);
+    
+    var options = {
+      title:'My skills'
+    };
+    
+    var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+      chart.draw(data, options);
+    }
+    </script>
+    
+</section>
+
+<section>
+    <div class="middle-container">
+        <!-- Personal info -->
+      <div class="profile">
+        <br />
+        <img
+          style="width: 30%; height: 10%"
+          src="images\Maxim Photo_512x512 111.png"
+          alt="maxim-profile-img"
+        />
+        <h2>Hello.</h2>
+        <p class="intro">
+          Im Maxim Tsvetkov <br /> <br>
+          
+          
+          Someone once told me to go with what you ❤️ and good at and stick to
+          it. <br /> <br>
+          Im considering myself creative in all of the technical and mechanic
+          aspects and with the my passion to computer games from little age, I
+          think that the job as programmer will be good to me and ill be
+          very good at it !
+          
+        </p>
+      </div>
+      <hr />
+</section> 
+
+<section>
+
+</section>
+
+<section>
+
+</section>
+
+<section>
+<!-- Contact me -->
+    <div class="contact-me">
+        <h2><span class="pro">Get In Touch</span></h2> 
+        <h3>If you liked the first web site <br> 
+            please let me know !  </h3><br> <br> 
+            <h4>Phone number : 052 -7741590 <br />
+            Email : maxim5265@gmail.com </h4> <br /> <br>
+           
+        <a class="contact-me-btn" href="mailto:maxim@tsvetkov.com">CONTACT ME</a>
+    </div>
+    <br>
+</section>
+
+<section>
+</div>
+<!-- Bottom -->
+<div class="bottom-container">
+  <a class="footer-link" href="https://www.linkedin.com/in">LinkedIn  <i class="fa fa-linkedin" style="color:whitesmoke;"></i></a>
+  <a class="footer-link" href="https://twitter.com">Twitter <i class="fa fa-twitter" style="color: aqua;"></i> </a>
+  <a class="footer-link" href="https://www.facebook.com/in">facebook  <i class="fa fa-facebook" style="color: blue;"></i></a>
+  <a class="footer-link" href="https://www.instagram.com/in">instagram  <i class="fa fa-instagram" style="color: #C92BB7"></i></a> 
+  <p class="copyright">© 2023 Maxim Tsvetkov.</p>
+</div>
+</section>
+
+</body>
+
+</html>
+

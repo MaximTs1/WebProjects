@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Maxim Tsvetkov</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- check all the funtions we learned on the course and all them to the file -->
+
+    <script>
+
+      function EX_1() {
+        var number = GetNumberEx_1.value;
+
+        if (number < 100) {
+          alert("Small");
+        } else if (number > 1000) {
+          alert("Large");
+        } else {
+          alert("Medium");
+        }
+      }
+
+      function EX_2() {
+        var name = GetNumberEx_2.value;
+        alert("Hello " + name + ", welcome back to the system.");
+      }
+
+      function EX_3() {
+        var password = GetNumberEx_3.value;
+
+        if (password == "hackeru123456") {
+          alert("Identification was successful!");
+        } else {
+          alert("The password is incorrect, identification is required");
+        }
+      }
+
+      function EX_4() {
+        var age = GetNumberEx_4.value;
+
+        if (age < 16) {
+          alert("You are not allowed to enter");
+        } else if (age > 18) {
+          alert("You are welcome to join");
+        } else {
+          alert("You may enter with parental permission");
+        }
+      }
+
+      function EX_5() {
+        var a = parseInt(GetNumberEx_5_1.value);
+        var b = parseInt(GetNumberEx_5_2.value);
+        var c = parseInt(GetNumberEx_5_3.value);
+
+        if (GetNumberEx_5_sign.value == "+"){
+            var number=Number(a)+Number(b)+Number(c);
+            alert(number);
+        }else if (GetNumberEx_5_sign.value == "-"){
+            var number=-Number(a)-Number(b)-Number(c);
+            alert(number);
+        } else {
+            alert ("Wrong input! Try again!")
+        }
+       }
+
+    </script>
+    <style>
+        html body {
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  border: 1px solid transparent;
+}
+
+h1 {
+  color: #66bfbf;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: "Sacramento", cursive;
+}
+
+h2 {
+  color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  line-height: 2;
+  font-size: 1.25rem;
+}
+
+hr {
+  border: dotted #eaf6f6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eaf6f6;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 50px 0 0;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+
+  box-sizing: border-box;
+}
+
+.EX {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.Exrecise-Table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  margin-left: 0%;
+  margin-right: auto;
+}
+td,
+th {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.code-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.Exrecise {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+  background-color: #d0e9e9;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="top-container">
+      <img class="top-cloud" src="images/cloud.png" alt="cloud" />
+      <div class="title-text">
+        <h1>I'm Maxim.</h1>
+        <h2>a <span class="pro">pro</span>grammering student.</h2>
+      </div>
+      <img class="bottom-cloud" src="images/cloud.png" alt="cloud" />
+      <img class="mountain" src="images/mountain.png" alt="mountain-img" />
+    </div>
+
+    <div class="middle-container">
+        <!-- Personal info -->
+      <div class="profile">
+        <br />
+        <img
+          style="width: 30%; height: 10%"
+          src="images\Maxim Photo_512x512 111.png"
+          alt="maxim-profile-img"
+        />
+        <h2>Hello.</h2>
+        <p class="intro">
+          Name : Maxim Tsvetkov <br />
+          <br />
+          Phone number : 052 -7741590 <br />
+          <br />
+          Email : maxim5265@gmail.com <br />
+          <br />
+
+          <span class="pro">few words about the Miunim stage:</span>
+          <br />
+          The most complicated part in this project was to go back to the basics that
+          I did long time ago and go deeper with the details. <br />
+          <br />
+          On the other hand, going through the basics again in an new
+          perspective, trying to study the material even better and master those
+          skills. <br /><br />
+          Someone once told me to go with what you ❤️ and good at and stick to
+          it. <br />
+          Im considering myself creative in all of the technical and mechanic
+          aspects and with the my passion to computer games from little age i
+          think that the job as programmer will be good to me and ill be
+          very good at it !
+        </p>
+      </div>
+      <hr />
+
+      <div class="skills">
+        <h2>Ex 1-5</h2>
+        <!-- 1 -->
+        <div class="EX">
+          <img class="Exrecise" src="images\Ex images\Ex1.png" alt="chillies-img" />
+
+          <h3>Get a number from the user:</h3>
+          <h4>(it can be assumed that the user will dial a positive number)</h4>
+          <div >
+            <table>
+              <tr>
+                <td>🔘</td>
+                <td>If the number is between 0 and 100, print "Small"</td>
+              </tr>
+              <tr>
+                <td>🔘</td>
+                <td>If the number is between 101 and 1000, print "Medium"</td>
+              </tr>
+              <tr>
+                <td>🔘</td>
+                <td>If the number is greater than 1000 print "Large".</td>
+              </tr>
+            </table>
+          </div>
+          <br /><br />
+
+          <div>
+            <form>
+              <input
+                type="text"
+                placeholder="Number between: [0,♾️)"
+                id="GetNumberEx_1"
+              />
+              <input type="button" onclick="EX_1();" value="Check" />
+            </form>
+
+          </div>
+        </div>
+        <hr />
+        <!-- 2 -->
+        <div class="EX">
+          <img class="Exrecise" src="images\Ex images\\Ex2.png" alt="chillies-img" />
+
+          <h3>Get a first and last name from the user:</h3>
+          <h4>
+            For example, if the user pressed "Gal" and "Lavi" the message "Hello
+            Gal Lavi, welcome back to the system" will be printed.
+          </h4>
+          <br />
+          <div>
+            <form>
+              <input
+                type="text"
+                placeholder="First & Last name"
+                id="GetNumberEx_2"
+              />
+              <input type="button" onclick="EX_2();" value="Check" />
+            </form>
+
+          </div>
+        </div>
+        <br /><br />
+        <hr />
+        <!-- 3 -->
+        <div class="EX">
+          <img class="Exrecise" src="images\Ex images\\Ex3.png" alt="chillies-img" />
+
+          <h3>Get a system password from the user.</h3>
+          <h4>
+            If the password is "hackeru123456", print to the user the message
+            "Identification was successful". <br />
+            Otherwise print "The password is incorrect, identification is
+            required".
+          </h4>
+          <br />
+          <div>
+            <form>
+              <input type="text" placeholder="Password" id="GetNumberEx_3" />
+              <input type="button" onclick="EX_3();" value="Check" />
+            </form>
+<!-- 4 -->
+          </div>
+        </div>
+        <br />
+        <hr />
+
+        <!-- 4 -->
+        <div class="EX">
+          <img class="Exrecise" src="images\Ex images\\Ex4.png" alt="chillies-img" />
+
+          <h3>Get a age from the user:</h3>
+          <div class="Exrecise-Table">
+            <table>
+              <tr>
+                <td>🔘</td>
+                <td>
+                  If their age is under 16 (not inclusive), write to the user:
+                  "You are not authorized to enter"
+                </td>
+              </tr>
+              <tr>
+                <td>🔘</td>
+                <td>
+                  If their age is between 16 and 18 (inclusive), write to the
+                  user: "You may enter with parental permission"
+                </td>
+              </tr>
+              <tr>
+                <td>🔘</td>
+                <td>
+                  If you are over 18, write to the user: "you are welcome to
+                  join"
+                </td>
+              </tr>
+            </table>
+          </div>
+          <br /><br />
+
+          <div>
+            <form>
+              <input
+                type="text"
+                placeholder="age between: [0,♾️)"
+                id="GetNumberEx_4"
+              />
+              <input type="button" onclick="EX_4();" value="Check" />
+            </form>
+
+          </div>
+        </div>
+        <br>
+        <hr /> 
+        <!-- 5 -->
+        <div class="EX">
+            <img class="Exrecise" src="images\Ex images\\Ex5.png" alt="chillies-img" />
+  
+            <h3>Get a 3 different numbers and one "+/-" sign from the user:</h3>
+            <div class="Exrecise-Table">
+              <table>
+                <tr>
+                  <td>🔘</td>
+                  <td>
+                    If you pressed "+", the result of adding the 3 numbers must be printed.
+                  </td>
+                </tr>
+                <tr>
+                  <td>🔘</td>
+                  <td>
+                    If you pressed "–", the result of the subtraction of the 3 numbers must be printed.
+                  </td>
+                </tr>
+               </table>
+            </div>
+            <br /><br />
+  
+            <div>
+              <form>
+                <input
+                  type="text"
+                  placeholder="Number between: (-♾️,♾️)"
+                  id="GetNumberEx_5_1"
+                />
+                <input
+                  type="text"
+                  placeholder="Number between: (-♾️,♾️)"
+                  id="GetNumberEx_5_2"
+                />
+                <input
+                  type="text"
+                  placeholder="Number between: (-♾️,♾️)"
+                  id="GetNumberEx_5_3"
+                />
+                <input
+                  type="text"
+                  placeholder="+/-"
+                  id="GetNumberEx_5_sign"
+                />
+
+                <input type="button" onclick="EX_5();" value="Check" />
+              </form>
+
+            </div>
+        </div>
+        <br>
+        <hr />
+        <!-- Contact me -->
+        <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>If you liked the first web site <br> please let me know !</h3><br>
+        <a class="btn" href="mailto:maxim@tsvetkov.com">CONTACT ME</a>
+        </div>
+    </div>
+    <br><br>
+    <!-- Bottom -->
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com">Twitter</a>
+      <p class="copyright">© 2023 Maxim Tsvetkov.</p>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="scss/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- main -->
+    <!--------------------------------------------------->
+
+    <!-- Nav bar-->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Book Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Page info-->
+    <section>
+      <div class="Page-Info">
+        <h1>חנות הספרים</h1>
+        <h3>מציג 1-20 מתוך 1000 תוצאות</h3>
+      </div>
+      <br />
+
+      <div class="filter-options">
+        <label></label>
+        <select>
+          <option>מיין לפי המעודכן ביותר</option>
+          <option>מיין מהזול ליקר</option>
+          <option>מיין מהיקר לזול</option>
+          <option>מיין לפי הא-ב</option>
+          <option>מיין לפי פופולריות</option>
+        </select>
+      </div>
+
+      <div class="category-filter">
+        <label></label>
+        <select>
+          <option>בחר קטגוריה</option>
+          <option>מדע בידיוני</option>
+          <option>אימה</option>
+          <option>פנטזיה</option>
+          <option>הרפתקאות</option>
+          <option>היסטוריה</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- books container-->
+    <section class="books">
+      <div class="book">
+        <img src="images/img1.jpg" alt="Book 1" class="Book__img" />
+        <svg class="book__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="book__name">Beautiful Book</h5>
+
+        <div class="book__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-book"></use>
+          </svg>
+          <p>$1,200,000</p>
+        </div>
+        <button class="btn book__btn">Add to cart</button>
+      </div>
+
+      <div class="book">
+        <img src="images/img1.jpg" alt="Book 1" class="Book__img" />
+        <svg class="book__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="book__name">Beautiful Book</h5>
+
+        <div class="book__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-book"></use>
+          </svg>
+          <p>$1,200,000</p>
+        </div>
+        <button class="btn book__btn">Add to cart</button>
+      </div>
+
+      <div class="book">
+        <img src="images/img1.jpg" alt="Book 1" class="Book__img" />
+        <svg class="book__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="book__name">Beautiful Book</h5>
+
+        <div class="book__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-book"></use>
+          </svg>
+          <p>$1,200,000</p>
+        </div>
+        <button class="btn book__btn">Add to cart</button>
+      </div>
+
+      <div class="book">
+        <img src="images/img1.jpg" alt="Book 1" class="Book__img" />
+        <svg class="book__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="book__name">Beautiful Book</h5>
+
+        <div class="book__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-book"></use>
+          </svg>
+          <p>$1,200,000</p>
+        </div>
+        <button class="btn book__btn">Add to cart</button>
+      </div>
+
+      <div class="book">
+        <img src="images/img1.jpg" alt="Book 1" class="Book__img" />
+        <svg class="book__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="book__name">Beautiful Book</h5>
+
+        <div class="book__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-book"></use>
+          </svg>
+          <p>$1,200,000</p>
+        </div>
+        <button class="btn book__btn">Add to cart</button>
+      </div>
+
+      <div class="book">
+        <img src="images/img1.jpg" alt="Book 1" class="Book__img" />
+        <svg class="book__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="book__name">Beautiful Book</h5>
+
+        <div class="book__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-book"></use>
+          </svg>
+          <p>$1,200,000</p>
+        </div>
+        <button class="btn book__btn">Add to cart</button>
+      </div>
+
+      <div class="book">
+        <img src="images/img1.jpg" alt="Book 1" class="Book__img" />
+        <svg class="book__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="book__name">Beautiful Book</h5>
+
+        <div class="book__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-book"></use>
+          </svg>
+          <p>$1,200,000</p>
+        </div>
+        <button class="btn book__btn">Add to cart</button>
+      </div>
+    </section>
+
+    <!------------------------------------------------------->
+    <!-- footer-->
+    <section>
+      <footer class="bg-light text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Delivery</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-dark">Shipping info</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Delivery prices</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Returns policy</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0">Book club</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-dark">Book club info</a>
+                </li>
+
+                <li>
+                  <a href="#!" class="text-dark">Join book club</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Events</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-dark"> 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark"> 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark"> 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark"> 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-dark">About us</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Contact page</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Shipping info</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Site rules</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2023 Copyright: Maxim Tsvetkov
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
