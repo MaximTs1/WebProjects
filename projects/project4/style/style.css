@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap");
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  max-height: 1080px;
+  min-height: 300px;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.frame_left {
+  background-image: url("../img/Coffee.png");
+  width: 55%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+.frame_box {
+  top: 23%;
+  left: 67%;
+  width: 22.5%;
+  height: 506px;
+  background: clear;
+  opacity: 1;
+  position: fixed;
+}
+
+.frame_box h1 {
+  text-align: center;
+  font-size: 43px;
+  color: #020253;
+  word-spacing: 0;
+  font-weight: bold;
+}
+
+.frame_box h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #020253;
+  word-spacing: 0;
+  margin: 5% 7% 10% 7%;
+}
+
+.field {
+  margin: 5% 5% 5% 15%;
+  direction: rtl !important;
+}
+
+label {
+  display: block;
+  color: #2c2c2c;
+  font-weight: bold;
+  direction: rtl;
+}
+
+input {
+  width: 100% !important;
+  height: 3rem;
+  border: none;
+  border-bottom: 2px solid #020253;
+  background-color: #e5eeff;
+}
+
+button {
+  background-color: #020253;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3%;
+  height: 3rem;
+  width: 10rem;
+  direction: rtl !important;
+}
+
+@media (max-width: 1650px) {
+  .frame_box {
+    top: 15%;
+  }
+}
+@media (max-width: 1400px) {
+  .frame_box {
+    top: 10%;
+  }
+}
+@media (max-width: 1200px) {
+  .frame_box {
+    top: 7%;
+  }
+}
+@media (max-width: 1030px) {
+  .frame_box {
+    top: 2%;
+  }
+}
+@media (max-width: 916px) {
+  .frame_box {
+    top: 0%;
+  }
+  .frame_box h1 {
+    font-size: 36px;
+  }
+  .frame_box h2 {
+    font-size: 16px;
+    margin: 5% 7% 10% 7%;
+  }
+  .field {
+    margin: 5% 15% 5% 15%;
+    direction: rtl !important;
+  }
+  input {
+    height: 2rem;
+  }
+  button {
+    font-size: 20px;
+    margin-top: 3%;
+    height: 2rem;
+    width: 100% !important;
+  }
+}
+@media (max-width: 740px) {
+  .frame_box {
+    top: 0%;
+  }
+  .frame_box h1 {
+    font-size: 28px;
+  }
+  .frame_box h2 {
+    font-size: 14px;
+  }
+  input {
+    height: 1.5rem;
+  }
+  button {
+    font-size: 20px;
+    margin-top: 3%;
+    height: 1.5rem;
+    width: 100% !important;
+    direction: rtl !important;
+  }
+}
+@media (max-width: 658px) {
+  .frame_left {
+    max-height: 259px;
+    width: 100%;
+    background-image: url("../img/Coffee1.png") !important;
+  }
+  .frame_box {
+    width: 100%;
+    height: 48%;
+    position: static;
+  }
+  .frame_box h1 {
+    font-size: 28px;
+  }
+  .frame_box h2 {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
