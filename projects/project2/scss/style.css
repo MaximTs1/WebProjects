@@ -1,0 +1,95 @@
+/*
+COLORS
+
+
+Primary dark: #999
+
+
+
+:root {
+  --color-primary: #79a7d3;
+  --color-primary-light: #a9dce3;
+  --color-primary-dark: #999;
+}
+*/
+html,
+body {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #d8f4f7, #72ca91);
+}
+
+.Page-Info {
+  text-align: center;
+}
+
+h1 {
+  padding: 2rem 0rem 1rem 0rem;
+}
+
+h3 {
+  font-size: medium;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.filter-options {
+  text-align: right;
+  margin-right: 15vw;
+  margin-bottom: 1vw;
+}
+
+.category-filter {
+  text-align: right;
+  margin-right: 15vw;
+  margin-bottom: 1vw;
+}
+
+.books {
+  max-width: 1800px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 4rem;
+  background-color: none;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+img {
+  max-width: 280px;
+  max-height: 390px;
+  margin: auto;
+}
+
+.book {
+  max-width: 300px;
+  background-color: #fffdfb;
+  text-align: center;
+  width: 100%;
+  border-radius: 7px;
+  margin: auto;
+  padding-bottom: 5%;
+}
+.book__img {
+  z-index: 1;
+}
+.book__name {
+  z-index: 1;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: black;
+  font-weight: 400;
+  transform: translateY(50%);
+}
+.book__price {
+  font-size: 1.5rem;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
