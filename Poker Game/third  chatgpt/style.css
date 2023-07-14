@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #1b6fb3;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 16px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: bisque;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.deck,
+.player {
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.7882352941);
+  border-radius: 6px;
+  padding: 16px;
+  margin: 8px;
+  text-align: center;
+}
+
+.deck button {
+  margin-top: 16px;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+}
+
+.player {
+  width: 200px;
+}/*# sourceMappingURL=style.css.map */

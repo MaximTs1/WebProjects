@@ -1,0 +1,45 @@
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  background: transparent linear-gradient(62deg, #071192 0%, #f81e70 100%) 0% 0% no-repeat padding-box;
+  margin: 0;
+  direction: rtl;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  background-image: url(../../../images/AdobeStock_2145941832.jpeg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.frame {
+  width: 30vw;
+  height: 100vh;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.textBox {
+  margin-right: 11%;
+  width: 50%;
+}
+
+input {
+  margin-right: 11%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #d31c75;
+}
+
+button {
+  background: #d31c75 0% 0% no-repeat padding-box;
+  margin-right: 11%;
+  margin-top: 5%;
+}
+
+label {
+  margin-right: 11%;
+}/*# sourceMappingURL=style.css.map */

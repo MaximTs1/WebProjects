@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon1.ico"
+      type="image/x-icon"
+    />
+    <title>Project 1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        scroll-behavior: smooth;
+        height: 100%;
+        background: linear-gradient(62deg, #071192 0%, #f81e70 100%);
+        margin: 0;
+        direction: rtl;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .frame {
+        max-width: 800px;
+        width: 90%;
+        padding: 20px;
+        background-color: #fff;
+      }
+
+      .textBox {
+        margin-bottom: 20px;
+      }
+
+      input {
+        padding: 5px;
+        background: #fff;
+        border: 1px solid #d31c75;
+      }
+
+      button {
+        background: #d31c75;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      hr {
+        margin-top: 20px;
+      }
+
+      /* Responsive Styles */
+      @media (min-width: 768px) {
+        body {
+          align-items: flex-start;
+          padding: 20px;
+        }
+
+        .frame {
+          margin-top: 10vh;
+        }
+
+        .textBox {
+          margin-right: 11%;
+          width: 50%;
+        }
+
+        input,
+        button {
+          margin-right: 11%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="textBox">
+        <h1>רשימת קניות</h1>
+      </div>
+      <div class="textBox">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+          perferendis labore porro laboriosam, tempora rerum.
+        </p>
+      </div>
+      <div class="input">
+        <label for="name">שם</label>
+        <input type="text" id="name" value="hello" />
+        <button>add</button>
+      </div>
+      <hr />
+      <div></div>
+    </div>
+  </body>
+</html>
