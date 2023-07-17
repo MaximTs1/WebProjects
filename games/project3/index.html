@@ -6,32 +6,33 @@
     <link rel="stylesheet" href="style/style.css" />
     <link
       rel="shortcut icon"
-      href="../../images/favicon2.ico"
+      href="../../images/favicon3.ico"
       type="image/x-icon"
     />
-    <title>Project 2</title>
+    <script src="script.js"></script>
+    <title>Project 3</title>
   </head>
 
   <body>
     <div class="image"></div>
     <div class="frame">
-      <div class="textBox">
-        <h1>רשימת קניות</h1>
-      </div>
+      <h1 id="text">מערכת הרשמה</h1>
 
-      <div class="textBox">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-          perferendis labore porro laboriosam, tempora rerum.
-        </p>
-      </div>
+      <p id="text">
+        לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא
+        מקום” בעת עריכ.
+      </p>
 
       <div class="input">
-        <label>שם</label> <br />
-        <input type="text" value="hello" /> <br />
-        <label>שם</label> <br />
-        <input type="text" value="hello" />
-        <div><button>add</button></div>
+        <label>שם מלא</label> <br />
+        <input type="text" id="fullName" /> <br />
+        <label>אימייל</label> <br />
+        <input type="email" id="email" /> <br />
+        <label>שם משתמש</label> <br />
+        <input type="text" id="userName" /> <br />
+        <label>שם סיסמא</label> <br />
+        <input type="password" />
+        <div><button onclick="signup()">הרשמה</button></div>
       </div>
     </div>
   </body>

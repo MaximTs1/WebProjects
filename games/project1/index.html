@@ -9,6 +9,7 @@
       href="../../images/favicon1.ico"
       type="image/x-icon"
     />
+    <script src="script.js" defer></script>
     <title>project 1</title>
   </head>
 
@@ -26,11 +27,17 @@
       </div>
 
       <div class="input">
-        <label>שם</label> <br />
-        <input type="text" value="hello" />
-        <button>add</button>
+        <label>שם הפריט</label> <br />
+        <input type="text" id="inputText" />
+        <button class="add" onclick="addTask()">add</button>
       </div>
-      <hr />
+
+      <div class="tasksFrame open">
+        <div class="taskList"></div>
+
+        <!-- <button class="add" onclick="addTask()">+ New task</button> -->
+      </div>
+      <button class="save" onclick="save()">Save</button>
     </div>
   </body>
 </html>

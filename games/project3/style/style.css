@@ -9,6 +9,13 @@ body {
   min-height: 100vh;
 }
 
+body {
+  background-image: url(../../../images/pexels-kevin-ku-577585.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 .frame {
   width: 30vw;
   height: 100vh;
@@ -16,23 +23,54 @@ body {
   position: absolute;
 }
 
-.textBox {
+h1 {
+  margin-top: 15%;
+  text-align: right;
+  font: normal normal 900 36px/53px Heebo;
+  letter-spacing: 0px;
+  color: #2e0450;
+  opacity: 1;
+}
+
+p {
+  text-align: right;
+  font: normal normal normal 20px/29px Heebo;
+  letter-spacing: 0px;
+  color: #2e0450;
+  opacity: 1;
+}
+
+#text {
   margin-right: 11%;
-  width: 50%;
+  width: 70%;
 }
 
 input {
   margin-right: 11%;
   background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #d31c75;
+  border: 1px solid #dcdcdc;
+  opacity: 1;
 }
 
 button {
-  background: #d31c75 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(74deg, #53037b 0%, #230247 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
   margin-right: 11%;
   margin-top: 5%;
+  text-align: center;
+  font: normal normal bold 18px Heebo;
+  letter-spacing: 0.33px;
+  color: #ffffff;
+  opacity: 1;
+  width: 20%;
+  height: 5%;
 }
 
 label {
   margin-right: 11%;
+  text-align: right;
+  font: normal normal normal 20px/29px Heebo;
+  letter-spacing: 0px;
+  color: #2e0450;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif !important;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -25,8 +31,9 @@ body {
 }
 
 .textBox {
-  width: 50%;
-  margin-right: 25%;
+  width: 80%;
+  text-align: center;
+  margin-right: 10%;
 }
 
 h1 {
@@ -44,10 +51,73 @@ p {
   opacity: 1;
 }
 
-.game {
-  width: 25vw;
-  height: 44.5vh;
-  margin-top: 15vh;
-  margin-right: 12vw;
+/////////////////////////////////////////////////////
+
+.board {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4px;
   background-color: #ffffff;
+}
+
+.board div {
+  width: 80px;
+  height: 80px;
+  border: 2px solid;
+  border-color: #fdbd03;
+  font-size: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.board div:not(.dirty):hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 0;
+  margin: 0px;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1.4);
+  }
+}
+
+.winner {
+  font-size: 80px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: zoom-in 2s;
+}
+
+.bg {
+  background-color: #a4d967;
+}
+
+button {
+  margin-top: 5%;
+  background-color: #8bc34a;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+button:hover {
+  background-color: #a4d967;
 }

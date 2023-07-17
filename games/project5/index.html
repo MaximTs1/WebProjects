@@ -9,6 +9,8 @@
       href="../../images/favicon5.ico"
       type="image/x-icon"
     />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js" defer></script>
     <title>project 5</title>
   </head>
 
@@ -22,7 +24,11 @@
         </p>
       </div>
 
-      <div class="game"></div>
+      <div class="board"></div>
+
+      <div>
+        <button id="refresh" onclick="pageRefresh()">new game</button>
+      </div>
     </div>
   </body>
 </html>

@@ -9,18 +9,34 @@
       href="../../images/favicon4.ico"
       type="image/x-icon"
     />
+
     <title>project 4</title>
   </head>
 
   <body>
     <div class="frame">
       <div class="textBox">
-        <h1>רשימת קניות</h1>
+        <h1>משחק חשבון</h1>
         <p>
           לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא
           מקום” בעת עריכ.
         </p>
       </div>
+      <div id="question" class="block"></div>
+
+      <div class="block">
+        <input
+          type="number"
+          id="answer"
+          placeholder="Enter your answer"
+          onkeydown="handleKeyDown(event)"
+        />
+      </div>
+      <button onclick="checkAnswer()">Submit</button>
+
+      <div id="result"></div>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
