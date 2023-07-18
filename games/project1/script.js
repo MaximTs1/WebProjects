@@ -13,6 +13,12 @@ function addTask(
   const div = document.createElement("div");
   div.className = "task";
 
+  // if (localStorage.open.length > 5) {
+  //   let count = open.length * 10 + 100;
+  //   // document.querySelector("body").style.height = "${open.length*10+100}vh";
+  //   document.body.style.height = `${localStorage.open.length * 100 + 1080}px`; // Increase body height by 10vh
+  // }
+
   // מוסיף פסקה לתוך המשימה
   const p = document.createElement("p");
   // מאפשר לערוך את הפסקה
@@ -119,3 +125,4 @@ function save() {
   localStorage.open = JSON.stringify(open);
   localStorage.complete = JSON.stringify(complete);
 }
+// ${id}
