@@ -25,6 +25,7 @@ function addTask(
   p.contentEditable = true;
   p.innerHTML = content;
   div.appendChild(p);
+  save();
 
   // לצורך ביטול השורה כשלוחצים על אנטר
   p.addEventListener("keydown", (ev) => {
@@ -50,6 +51,17 @@ function addTask(
     }
   });
 
+  // כפתור בוצע
+  const btnFrame2 = document.createElement("div");
+  const btnComplete = document.createElement("button");
+  btnComplete.className = "complete";
+  btnComplete.innerHTML = "✔️";
+  btnComplete.addEventListener("click", () => {
+    save();
+  });
+  btnFrame2.appendChild(btnComplete);
+  div.appendChild(btnFrame2);
+
   // כפתור מחיקה
   const btnFrame = document.createElement("div");
   const btnRemove = document.createElement("button");
@@ -58,28 +70,7 @@ function addTask(
   btnRemove.addEventListener("click", () => div.remove());
   btnFrame.appendChild(btnRemove);
   div.appendChild(btnFrame);
-
-  // כפתור בוצע
-  const btnFrame2 = document.createElement("div");
-  const btnComplete = document.createElement("button");
-  btnComplete.className = "complete";
-  btnComplete.innerHTML = "✔️";
-  btnComplete.addEventListener("click", () => {
-    document.querySelector(".complete .taskList").appendChild(div);
-  });
-  btnFrame2.appendChild(btnComplete);
-  div.appendChild(btnFrame2);
-
-  // כפתור ביטול
-  const btnFrame3 = document.createElement("div");
-  const btnUndo = document.createElement("button");
-  btnUndo.className = "undo";
-  btnUndo.innerHTML = "🙈";
-  btnUndo.addEventListener("click", () => {
-    document.querySelector(".open .taskList").appendChild(div);
-  });
-  btnFrame3.appendChild(btnUndo);
-  div.appendChild(btnFrame3);
+  btnRemove.addEventListener("click", () => save());
 
   // אם קיבלנו אלמנט כפרמטר, משמע שאנחנו רוצים להוסיף אחריו משימה
   if (parentDiv) {
@@ -93,6 +84,8 @@ function addTask(
 
   // שם את הסמן בתוך התיבה
   p.focus();
+
+  save();
 }
 
 if (localStorage.open) {
@@ -111,18 +104,9 @@ if (localStorage.complete) {
   });
 }
 
-// הוספת משימה ראשונית
-addTask();
-
 function save() {
   const open = [...document.querySelectorAll(".open .task p")]
     .map((el) => el.innerText)
     .filter((x) => x);
-  const complete = [...document.querySelectorAll(".complete .task p")].map(
-    (el) => el.innerText
-  );
-
   localStorage.open = JSON.stringify(open);
-  localStorage.complete = JSON.stringify(complete);
 }
-// ${id}

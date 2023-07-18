@@ -16,18 +16,24 @@ function signup() {
       "Content-Type": "application/json", // הגדרת סוג התוכן הנשלח לשרת
     },
     body: JSON.stringify(obj), // תוכן הקריאה לשרת
-  })
-    // קבלה מהשרת
-    // *המרת התוכן לפי הצורך*
-    .then((res) => res.json())
-    // התוכן שהתקבל מהשרת (לאחר טיפול של הפונקציה הקודמת)
-    .then((data) => {
-      if (data.status == "success") {
-        setUser(data.user);
-        snackbar("המשתמש התחבר בהצלחה");
-      } else {
-        alert(data.message);
-        loader(false);
-      }
-    });
+  });
+  //   // קבלה מהשרת
+  //   // *המרת התוכן לפי הצורך*
+  //   .then((res) => res.json())
+  //   // התוכן שהתקבל מהשרת (לאחר טיפול של הפונקציה הקודמת)
+  //   .then((data) => {
+  //     if (data.status == "success") {
+  //       setUser(data.user);
+  //       snackbar("המשתמש התחבר בהצלחה");
+  //       pro
+  //     } else {
+  //       alert(data.message);
+  //       loader(false);
+  //     }
+  //   });
+
+  setTimeout(function () {
+    alert("הרשמה למערכת בוצעה בהצלחה");
+    location.reload();
+  }, 1500);
 }

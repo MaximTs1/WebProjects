@@ -187,6 +187,7 @@ function removeProduct(id, btnElem) {
 
 // פונקציה האחראית לשים את שם המשתמש בהודעה או לאפשר התחברות
 function setUser(user = null) {
+  const divPage = document.querySelector(".page");
   const divFrame = document.querySelector(".frame");
   const divLogin = document.querySelector(".login");
   const divUser = document.querySelector(".user");
@@ -194,6 +195,7 @@ function setUser(user = null) {
 
   // אם יש יוזר, מציגה את שם היוזר ומסתירה את תיבת ההתחברות
   if (user) {
+    divPage.style.visibility = "hidden";
     divFrame.style.visibility = "visible";
     divLogin.style.display = "none";
     divUser.style.display = "block";
@@ -201,6 +203,7 @@ function setUser(user = null) {
     getProducts();
   } else {
     // אם אין יוזר, מציגה את תיבת ההתחברות
+    divPage.style.visibility = "visible";
     divFrame.style.visibility = "hidden";
     divLogin.style.display = "block";
     divUser.style.display = "none";

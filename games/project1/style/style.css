@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;500;700;900&display=swap");
+* {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
 html,
 body {
   scroll-behavior: smooth;
-  background: transparent linear-gradient(62deg, #071192 0%, #f81e70 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(62deg, #071192 0%, #f81e70 100%);
   margin: 0;
   direction: rtl;
-  max-width: 100vw;
-  min-height: 100vh;
-  max-height: 2200px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
 .frame {
@@ -24,18 +28,26 @@ body {
   width: 50%;
 }
 
-input {
+.input {
   margin-right: 11%;
+}
+
+input {
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #d31c75;
+  padding: 5px;
 }
 
-button {
+.add {
   background: #d31c75 0% 0% no-repeat padding-box;
-}
-
-label {
-  margin-right: 11%;
+  color: #ffffff;
+  text-align: right;
+  font: normal normal 20px;
+  letter-spacing: 0.33px;
+  color: #ffffff;
+  opacity: 1;
+  border: 0;
+  padding: 6px 15px 6px 15px;
 }
 
 hr {
@@ -43,19 +55,11 @@ hr {
   margin-top: 5vh;
 }
 
-* {
-  font-family: "M PLUS Rounded 1c", sans-serif;
-}
-
 .tasksFrame {
   min-height: 200px;
   max-width: 600px;
   margin: 16px auto;
   padding: 6px;
-}
-
-.tasksFrame.complete {
-  background-color: #e3e3e3;
 }
 
 .task {
@@ -95,23 +99,6 @@ hr {
 .task button:hover {
   scale: 1.5;
   color: red;
-}
-
-.add {
-  background-color: #8bc34a;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: none;
-  margin-top: 8px;
-}
-
-.add:hover {
-  background-color: #a4d967;
-}
-
-.tasksFrame.complete button.complete {
-  display: none;
 }
 
 .undo {

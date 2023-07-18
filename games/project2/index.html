@@ -1,38 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
+    <meta charset="utf-8" />
+    <title>Project 2</title>
     <link
       rel="shortcut icon"
       href="../../images/favicon2.ico"
       type="image/x-icon"
     />
-    <script src="script.js"></script>
-    <title>Project 2</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="script/script.js" defer></script>
   </head>
 
-  <body>
-    <div class="frame">
-      <div class="textBox">
-        <h1>רשימת קניות</h1>
+  <body onload="loginStatus()">
+    <div class="page">
+      <div class="login">
+        <div class="textBox">
+          <h1>מערכת התחברות</h1>
+        </div>
+
+        <div class="textBox">
+          <p>
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא
+            מקום” בעת עריכ.
+          </p>
+        </div>
+        <label>
+          שם משתמש: <br />
+          <input type="text" id="userName" /> <br />
+        </label>
+
+        <label>
+          סיסמא: <br />
+          <input type="password" /> <br />
+        </label>
+
+        <button onclick="login()" id="loginButon">התחבר</button>
       </div>
 
-      <div class="textBox">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-          perferendis labore porro laboriosam, tempora rerum.
-        </p>
+      <div class="frame">
+        <div class="user">
+          <span class="userName"></span>
+          <button class="logout" onclick="logout()">התנתק</button>
+        </div>
+
+        <div class="products">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>שם המוצר</th>
+                <th>מחיר</th>
+                <th>הנחה</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><input id="name" type="text" placeholder="שם המוצר" /></td>
+                <td><input id="price" type="number" placeholder="מחיר" /></td>
+                <td>
+                  <input id="discount" type="number" placeholder="הנחה" />
+                </td>
+                <td><button onclick="addProduct()">הוסף</button></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
 
-      <div class="input">
-        <label>שם</label> <br />
-        <input type="text" value="hello" /> <br />
-        <label>שם</label> <br />
-        <input type="text" value="hello" />
-        <div><button>add</button></div>
+      <div class="loaderFrame">
+        <div class="loader"></div>
       </div>
+
+      <div id="snackbar"></div>
     </div>
   </body>
 </html>

@@ -15,7 +15,7 @@ function generateQuestion() {
   var operator = getRandomOperator();
 
   var questionElement = document.getElementById("question");
-  questionElement.textContent = num2 + " " + operator + " " + num1;
+  questionElement.textContent = num2 + " " + operator + " " + num1 + " =";
 }
 
 // Function to check the user's answer
