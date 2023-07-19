@@ -88,4 +88,32 @@ label {
   margin-right: 11%;
   color: #f9f9f9;
   font-size: 50px;
+}
+
+@media (max-width: 1370px) {
+  .frame {
+    width: 60vw;
+    right: 5vw;
+  }
+  .textBox {
+    width: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  .frame {
+    width: 70vw;
+    right: 5vw;
+  }
+  .textBox {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  .frame {
+    width: 80vw;
+    right: 5vw;
+  }
+  .textBox {
+    width: 70%;
+  }
 }/*# sourceMappingURL=style.css.map */

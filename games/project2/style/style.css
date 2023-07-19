@@ -67,6 +67,14 @@ h2 {
   margin: 0px;
 }
 
+a {
+  color: #1e92f8;
+}
+
+a:hover {
+  color: #53037b;
+}
+
 button {
   background-color: #8bc34a;
   color: white;
@@ -111,6 +119,10 @@ button:disabled {
 }
 
 .login {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
   width: 30vw;
   height: 100vh;
   background-color: #ffffff;
@@ -258,7 +270,7 @@ td {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-/* @-webkit-keyframes fadein {
+@-webkit-keyframes fadein {
   from {
     bottom: 0;
     opacity: 0;
@@ -304,4 +316,18 @@ td {
     bottom: 0;
     opacity: 0;
   }
-} */
+}
+
+@media (max-width: 980px) {
+  .page {
+  }
+
+  .login {
+    width: 90%;
+    margin-top: 15%;
+  }
+
+  .frame {
+    display: block;
+  }
+}

@@ -52,6 +52,19 @@ input {
   opacity: 1;
 }
 
+.textBox {
+  margin-right: 11%;
+}
+.textBox p {
+  color: black;
+}
+.textBox a {
+  color: #1e92f8;
+}
+.textBox a:hover {
+  color: #53037b;
+}
+
 button {
   background: transparent linear-gradient(74deg, #53037b 0%, #230247 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
