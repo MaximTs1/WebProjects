@@ -91,3 +91,28 @@ label {
   color: #2e0450;
   opacity: 1;
 }
+
+@media (max-width: 1268px) {
+  .frame {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 968px) {
+  .frame {
+    width: 55vw;
+  }
+}
+
+@media (max-width: 757px) {
+  .frame {
+    width: 65vw;
+  }
+}
+
+@media (max-width: 657px) {
+  .frame {
+    width: 80vw;
+    right: 10%;
+  }
+}

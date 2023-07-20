@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Thank You for Leaving Your Message</h2>
+      <p>We will contact you as soon as possible.</p>
+      <h3>Your Information:</h3>
+      <p><strong>Full Name:</strong> <span id="fullName"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Phone Number:</strong> <span id="phoneNumber"></span></p>
+      <p><strong>Message:</strong></p>
+      <p><span id="message"></span></p>
+      <button id="returnBtn">Return</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      // Retrieve user data from LocalStorage and display it on the "Thank You" page
+      document.getElementById("fullName").textContent =
+        localStorage.getItem("fullName");
+      document.getElementById("email").textContent =
+        localStorage.getItem("email");
+      document.getElementById("phoneNumber").textContent =
+        localStorage.getItem("phoneNumber");
+      document.getElementById("message").textContent =
+        localStorage.getItem("message");
+
+      // Add event listener to the "Return" button
+      const returnBtn = document.getElementById("returnBtn");
+      returnBtn.addEventListener("click", () => {
+        // Redirect back to the index.html page
+        window.location.href = "../../index.html";
+      });
+    </script>
+  </body>
+</html>

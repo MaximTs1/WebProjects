@@ -236,3 +236,9 @@ footer {
   color: black;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  a {
+    font-size: 5px;
+  }
+}

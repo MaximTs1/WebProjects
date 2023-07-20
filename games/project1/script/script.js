@@ -55,7 +55,7 @@ function addTask(
   const btnFrame2 = document.createElement("div");
   const btnComplete = document.createElement("button");
   btnComplete.className = "complete";
-  btnComplete.innerHTML = "✔️";
+  btnComplete.innerHTML = "💾";
   btnComplete.addEventListener("click", () => {
     save();
   });

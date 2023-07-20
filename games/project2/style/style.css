@@ -16,7 +16,7 @@ body {
 
 body {
   direction: rtl;
-  background-image: linear-gradient(#3dbf23, #fff);
+  background-image: linear-gradient(#2823bf, #fff);
   /* padding-bottom: 20px; */
   /* margin: 0; */
 
@@ -53,6 +53,7 @@ h1 {
   margin: auto;
   padding: 8px 16px;
   border-radius: 6px;
+  margin-top: 5%;
 }
 
 .task {
@@ -318,16 +319,24 @@ td {
   }
 }
 
-@media (max-width: 980px) {
-  .page {
-  }
-
+@media (max-width: 1280px) {
   .login {
-    width: 90%;
-    margin-top: 15%;
+    width: 40%;
+  }
+}
+
+@media (max-width: 980px) {
+  .login {
+    width: 60%;
+  }
+}
+
+@media (max-width: 657px) {
+  .login {
+    width: 95%;
   }
 
   .frame {
-    display: block;
+    width: 30%;
   }
 }

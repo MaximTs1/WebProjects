@@ -38,7 +38,7 @@ function checkAnswer() {
   var expectedAnswer = operator === "+" ? num2 + num1 : num2 - num1;
 
   if (answer === expectedAnswer) {
-    resultElement.textContent = "נכון!";
+    resultElement.textContent = "✅";
   } else {
     resultElement.textContent =
       "Incorrect. The correct answer is " + expectedAnswer + ".";

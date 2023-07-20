@@ -116,11 +116,43 @@ label {
 
 @media (max-width: 800px) {
   .frame {
-    width: 80vw;
+    width: 85vw;
     right: 5vw;
   }
 
   .textBox {
     width: 70%;
+  }
+}
+
+@media (max-width: 657px) {
+  .frame {
+    width: 90vw;
+    height: 80vh;
+    right: 5vw;
+  }
+
+  .textBox {
+    width: 80%;
+  }
+
+  input {
+    display: block;
+    margin-right: 22%;
+    width: 180%;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  #question {
+    margin-right: 25%;
+    margin-bottom: 5%;
+    display: block;
   }
 }

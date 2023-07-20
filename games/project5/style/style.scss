@@ -121,3 +121,34 @@ button {
 button:hover {
   background-color: #a4d967;
 }
+
+@media (max-width: 1400px) {
+  .frame {
+    width: 65vw;
+  }
+
+  .textBox {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .frame {
+    width: 70vw;
+  }
+
+  .textBox {
+    width: 80%;
+  }
+}
+
+@media (max-width: 657px) {
+  .frame {
+    width: 90vw;
+    right: 5%;
+  }
+
+  .textBox {
+    width: 80%;
+  }
+}

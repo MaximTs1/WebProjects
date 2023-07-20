@@ -206,4 +206,10 @@ footer {
   background-color: rgb(172, 218, 246);
   color: black;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  a {
+    font-size: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */
